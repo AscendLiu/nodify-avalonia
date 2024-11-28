@@ -46,68 +46,6 @@
             <GradientStop Color="#ec4899"
                           Offset="1" />
         </LinearGradientBrush>
-        
-        <Animation x:Key="BorderBrushAnimation"
-            FillMode="None"
-            IterationCount="Infinite"
-            x:SetterTargetType="ContentControl"
-            Duration="0:0:8">
-            <KeyFrame Cue="0%">
-                <Setter Property="BorderBrush">
-                    <Setter.Value>
-                        <LinearGradientBrush StartPoint="100%,0%" EndPoint="0%,100%">
-                            <GradientStop Color="#6366f1" Offset="0" />
-                            <GradientStop Color="#a855f7" Offset="0.5" />
-                            <GradientStop Color="#ec4899" Offset="1" />
-                        </LinearGradientBrush>
-                    </Setter.Value>
-                </Setter>
-            </KeyFrame>
-            <KeyFrame Cue="25%">
-                <Setter Property="BorderBrush">
-                    <Setter.Value>
-                        <LinearGradientBrush StartPoint="100%,100%" EndPoint="0%,0%">
-                            <GradientStop Color="#6366f1" Offset="0" />
-                            <GradientStop Color="#a855f7" Offset="0.5" />
-                            <GradientStop Color="#ec4899" Offset="1" />
-                        </LinearGradientBrush>
-                    </Setter.Value>
-                </Setter>
-            </KeyFrame>
-            <KeyFrame Cue="50%">
-                <Setter Property="BorderBrush">
-                    <Setter.Value>
-                        <LinearGradientBrush StartPoint="0%,100%" EndPoint="100%,0%">
-                            <GradientStop Color="#6366f1" Offset="0" />
-                            <GradientStop Color="#a855f7" Offset="0.5" />
-                            <GradientStop Color="#ec4899" Offset="1" />
-                        </LinearGradientBrush>
-                    </Setter.Value>
-                </Setter>
-            </KeyFrame>
-            <KeyFrame Cue="75%">
-                <Setter Property="BorderBrush">
-                    <Setter.Value>
-                        <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
-                            <GradientStop Color="#6366f1" Offset="0" />
-                            <GradientStop Color="#a855f7" Offset="0.5" />
-                            <GradientStop Color="#ec4899" Offset="1" />
-                        </LinearGradientBrush>
-                    </Setter.Value>
-                </Setter>
-            </KeyFrame>
-            <KeyFrame Cue="100%">
-                <Setter Property="BorderBrush">
-                    <Setter.Value>
-                        <LinearGradientBrush StartPoint="100%,0%" EndPoint="0%,100%">
-                            <GradientStop Color="#6366f1" Offset="0" />
-                            <GradientStop Color="#a855f7" Offset="0.5" />
-                            <GradientStop Color="#ec4899" Offset="1" />
-                        </LinearGradientBrush>
-                    </Setter.Value>
-                </Setter>
-            </KeyFrame>
-        </Animation>
 
         <local:ItemToListConverter x:Key="ItemToListConverter" />
 
