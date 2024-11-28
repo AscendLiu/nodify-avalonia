@@ -52,17 +52,6 @@
                          Color="MediumVioletRed"
                          Opacity="0.15" />
 
-        <!-- <UIElement x:Key="ConnectionAnimationPlaceholder" -->
-        <!--            Opacity="1" /> -->
-
-        <!-- <Storyboard x:Key="HighlightConnection"> -->
-        <!--     <DoubleAnimation Storyboard.Target="{StaticResource ConnectionAnimationPlaceholder}" -->
-        <!--                      Storyboard.TargetProperty="(UIElement.Opacity)" -->
-        <!--                      Duration="0:0:0.3" -->
-        <!--                      From="1" -->
-        <!--                      To="0.3" /> -->
-        <!-- </Storyboard> -->
-
         <ControlTheme x:Key="ConnectionStyle"
                TargetType="{x:Type nodify:BaseConnection}"
                BasedOn="{StaticResource {x:Type nodify:BaseConnection}}">
@@ -85,12 +74,6 @@
                                     Value="{StaticResource TriangleConnectorColor}" />
                         </DataTrigger>
                         <DataTrigger Property="IsPointerOver" Value="True">
-                            <!-- <DataTrigger.EnterActions> -->
-                            <!--     <BeginStoryboard Name="HighlightConnection" Storyboard="{StaticResource HighlightConnection}" /> -->
-                            <!-- </DataTrigger.EnterActions> -->
-                            <!-- <DataTrigger.ExitActions> -->
-                            <!--     <RemoveStoryboard BeginStoryboardName="HighlightConnection" /> -->
-                            <!-- </DataTrigger.ExitActions> -->
                             <PropertySetter Property="Opacity"
                                     Value="1" />
                         </DataTrigger>
@@ -120,8 +103,6 @@
                             Value="Transparent" />
                 </Style>
             </Style>
-            <!-- <Setter Property="Opacity" 
-                Value="{Binding Source={StaticResource ConnectionAnimationPlaceholder}, Path=Opacity}" /> -->
             <Setter Property="StrokeThickness" 
                     Value="3"/>
             <Setter Property="Stroke" 

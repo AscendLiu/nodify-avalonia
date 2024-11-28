@@ -258,7 +258,7 @@
                                  Text="{Binding Zoom, Mode=OneWay, Converter={StaticResource ToStringConverter}, Source={x:Static local:EditorSettings.Instance}}" />
                         </TextBlock.Inlines>
                     </TextBlock>
-                    <TextBlock ToolTip.Tip="The estimated frame rate. (my be buggy)">
+                    <TextBlock ToolTip.Tip="The estimated frame rate. (my be buggy)" Width="100">
                         <TextBlock.Inlines>
                             <Run Text="FPS: " />
                             <Run Foreground="LawnGreen"

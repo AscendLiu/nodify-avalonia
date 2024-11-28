@@ -1,7 +1,7 @@
 ﻿<Application x:Class="Nodify.Playground.App"
              xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             RequestedThemeVariant="Dark">
+             RequestedThemeVariant="Light">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
